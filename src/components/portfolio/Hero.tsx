@@ -16,7 +16,7 @@ export function Hero() {
         <img
           src={profilePhoto.url}
           alt="Portrait of Yelisetty Yaswanth Sai"
-          className="mx-auto h-24 w-24 rounded-full object-cover object-top ring-1 ring-border"
+          className="mx-auto h-24 w-24 rounded-full object-cover object-[center_28%] ring-1 ring-border"
         />
         <p className="mt-8 text-sm font-medium text-primary">{profile.role}</p>
         <h1 className="mt-3 text-balance-tight text-5xl font-semibold sm:text-7xl">
