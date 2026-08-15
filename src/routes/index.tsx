@@ -8,9 +8,9 @@ import { Skills } from "@/components/portfolio/Skills";
 import { Education } from "@/components/portfolio/Education";
 import { Contact } from "@/components/portfolio/Contact";
 
-const title = "Yaswanth Sai — AI & Cloud Engineer";
+const title = "Yaswanth Sai — AI & Data Engineer";
 const description =
-  "Portfolio of Yelisetty Yaswanth Sai, AI & Cloud Engineer building RAG pipelines, reinforcement learning environments and production cloud systems.";
+  "Portfolio of Yelisetty Yaswanth Sai, AI & Data Engineer building ETL pipelines, BI dashboards, RAG systems and production AI agents.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

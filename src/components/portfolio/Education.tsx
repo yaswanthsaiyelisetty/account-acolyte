@@ -24,6 +24,17 @@ export function Education() {
           </div>
         ))}
       </div>
+
+      <h3 className="mt-14 text-xs font-medium uppercase tracking-[0.18em] text-primary">
+        Certifications
+      </h3>
+      <ul className="mt-6 grid gap-px overflow-hidden rounded-3xl bg-border sm:grid-cols-2">
+        {certifications.map((c) => (
+          <li key={c} className="bg-surface px-6 py-5 text-sm text-muted-foreground">
+            {c}
+          </li>
+        ))}
+      </ul>
     </Section>
   );
 }
