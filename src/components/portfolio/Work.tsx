@@ -7,7 +7,7 @@ export function Work() {
       id="work"
       eyebrow="Selected work"
       title="Things I've built."
-      intro="Production systems spanning reinforcement learning, AI products and cloud backends."
+      intro="Data pipelines, BI dashboards and AI products — shipped, deployed and open on GitHub."
     >
       <div className="space-y-6">
         {projects.map((p) => (
@@ -50,6 +50,30 @@ export function Work() {
                     </li>
                   ))}
                 </ul>
+                {p.link || p.live ? (
+                  <div className="mt-6 flex flex-wrap gap-3">
+                    {p.live ? (
+                      <a
+                        href={p.live}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="rounded-full bg-primary px-4 py-1.5 text-xs font-medium text-primary-foreground transition-opacity hover:opacity-85"
+                      >
+                        Live site
+                      </a>
+                    ) : null}
+                    {p.link ? (
+                      <a
+                        href={p.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="rounded-full border border-border px-4 py-1.5 text-xs font-medium text-foreground transition-colors hover:bg-secondary"
+                      >
+                        View code
+                      </a>
+                    ) : null}
+                  </div>
+                ) : null}
               </div>
 
               <div className="min-w-0">

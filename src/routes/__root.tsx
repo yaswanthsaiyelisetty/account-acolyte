@@ -77,18 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Yaswanth Sai — AI & Cloud Engineer" },
+      { title: "Yaswanth Sai — AI & Data Engineer" },
       {
         name: "description",
         content:
-          "Portfolio of Yelisetty Yaswanth Sai, AI & Cloud Engineer building RAG pipelines, RL environments and production cloud systems.",
+          "Portfolio of Yelisetty Yaswanth Sai, AI & Data Engineer building ETL pipelines, BI dashboards, RAG systems and production AI agents.",
       },
       { name: "author", content: "Yelisetty Yaswanth Sai" },
-      { property: "og:title", content: "Yaswanth Sai — AI & Cloud Engineer" },
+      { property: "og:title", content: "Yaswanth Sai — AI & Data Engineer" },
       {
         property: "og:description",
         content:
-          "AI & Cloud Engineer building intelligent, production-ready systems.",
+          "AI & Data Engineer building intelligent, production-ready data systems.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
