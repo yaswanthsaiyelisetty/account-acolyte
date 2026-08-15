@@ -1,5 +1,5 @@
 import { Section } from "./Section";
-import { education } from "@/data/portfolio";
+import { education, certifications } from "@/data/portfolio";
 
 export function Education() {
   return (
