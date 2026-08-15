@@ -1,40 +1,43 @@
 export const profile = {
   name: "Yelisetty Yaswanth Sai",
   short: "Yaswanth Sai",
-  role: "AI & Cloud Engineer",
-  tagline: "I build intelligent systems.",
+  role: "AI & Data Engineer",
+  tagline: "I build intelligent data systems.",
   intro:
-    "Architecting scalable cloud infrastructure and integrating advanced LLMs to turn complex challenges into production-ready solutions.",
+    "Microsoft Certified Fabric Data Engineer building ETL pipelines, BI dashboards and production AI agents — turning raw data into decisions and LLMs into working products.",
   about:
-    "I specialize in building intelligent systems that bridge the gap between cutting-edge AI and real-world applications. From architecting RAG pipelines to deploying scalable cloud infrastructure, I turn complex technical challenges into elegant, production-ready solutions.",
+    "I work across the AI and data stack: designing ETL pipelines and lakehouse-style data layers, building Power BI and SQL-driven reporting, and shipping LLM products with RAG, vector search and agentic workflows. My focus is the unglamorous part that makes systems real — clean data, validated pipelines and reliable deployments.",
   quote:
-    "Building intelligent, scalable infrastructure that bridges cutting-edge AI with real-world applications.",
+    "Good AI starts with good data. I build both ends of that pipeline.",
   email: "yaswanthsaiyelisetty@gmail.com",
+  phone: "+91 93472 72614",
+  location: "Andhra Pradesh, India",
   github: "https://github.com/yaswanthsaiyelisetty",
-  linkedin: "https://www.linkedin.com/in/yaswanthsaiyelisetty",
+  linkedin: "https://www.linkedin.com/in/yelisettyyaswanthsai",
   specializations: [
-    "LLM Integration",
+    "Data Engineering & ETL",
+    "Business Intelligence",
     "RAG Architectures",
-    "Cloud Computing",
-    "Full-Stack Development",
+    "LLM & Agent Systems",
+    "Cloud Deployment",
   ],
 };
 
 export const stats = [
   { value: "30+", label: "Certifications" },
-  { value: "5+", label: "Projects deployed" },
-  { value: "20+", label: "Technologies" },
+  { value: "2", label: "Microsoft Fabric certs" },
+  { value: "10+", label: "Projects shipped" },
   { value: "150+", label: "Users reached" },
 ];
 
 export const education = [
   {
-    period: "2022 — Present",
+    period: "2023 — 2027",
     title: "B.Tech, Computer Science & Engineering",
     org: "Dhanekula Institute of Engineering and Technology",
     score: "7.96 CGPA",
     detail:
-      "Specialized in AI/ML, cloud computing and full-stack development. Building real-world products with Google Gemini and Azure infrastructure.",
+      "Expected graduation 2027. Focus on data engineering, AI/ML and cloud — building real products with Microsoft Fabric, Google Gemini and Azure infrastructure.",
   },
   {
     period: "2023",
@@ -54,6 +57,15 @@ export const education = [
   },
 ];
 
+export const certifications = [
+  "Microsoft Certified: Fabric Data Engineer Associate (DP-700)",
+  "Microsoft Certified: Fabric Analytics Engineer Associate",
+  "Google Cloud Skill Badge — Generative AI",
+  "Google Cloud Skill Badge — Large Language Models",
+  "Google Cloud Skill Badge — Retrieval Augmented Generation",
+  "Infosys Java Developer Certification",
+];
+
 export type Project = {
   name: string;
   subtitle: string;
@@ -66,24 +78,85 @@ export type Project = {
   metrics: { value: string; label: string }[];
   highlights: string[];
   link?: string;
+  live?: string;
 };
 
 export const projects: Project[] = [
   {
+    name: "Global E-Commerce BI & Profit Optimization",
+    subtitle: "End-to-end analytics on three years of sales data",
+    meta: "Data Engineering / Business Intelligence",
+    status: "Completed",
+    summary:
+      "An end-to-end analytics project turning a global e-commerce transactions dataset (2023–2025) into a profit-optimization dashboard. Raw CSV flows through a Python cleaning and validation pipeline into SQLite, then into notebook EDA and an interactive web dashboard.",
+    stack: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "SQL / SQLite",
+      "Matplotlib & Seaborn",
+      "Chart.js",
+    ],
+    metrics: [
+      { value: "3 yrs", label: "Data covered" },
+      { value: "4-stage", label: "ETL pipeline" },
+      { value: "SQLite", label: "Analytics store" },
+      { value: "Medallion", label: "Layered design" },
+    ],
+    highlights: [
+      "Full pipeline: raw CSV → cleaned layers → SQLite → EDA → dashboard",
+      "Data quality enforced through validation and feature engineering in Pandas",
+      "Optimized SQL for revenue, margin and regional profitability analysis",
+      "Analyzes discounting and shipping cost as profit drivers",
+    ],
+    link: "https://github.com/yaswanthsaiyelisetty/Global-E-Commerce-Business-Intelligence-Profit-Optimization",
+  },
+  {
+    name: "Gmail Support Agent",
+    subtitle: "RAG-powered support desk on top of Gmail",
+    meta: "AI Product / Data Platform",
+    status: "Deployed",
+    summary:
+      "A support platform that syncs Gmail into tickets, uses Gemini to analyze intent, sentiment and urgency, and retrieves company knowledge through pgvector semantic search to draft context-aware replies. A human agent reviews and sends every draft in the original thread.",
+    stack: [
+      "Python",
+      "FastAPI",
+      "PostgreSQL + pgvector",
+      "Gemini",
+      "Celery & Redis",
+      "Next.js",
+      "Docker",
+    ],
+    metrics: [
+      { value: "RAG", label: "Reply drafting" },
+      { value: "HITL", label: "Review flow" },
+      { value: "5", label: "Doc formats indexed" },
+      { value: "OAuth2", label: "Gmail access" },
+    ],
+    highlights: [
+      "Semantic search over a knowledge base using Gemini embeddings and pgvector",
+      "Human-in-the-loop review, regeneration and threaded sending",
+      "Analytics on volume, sentiment, urgency, escalations and response time",
+      "Containerized services with secure REST APIs and Google OAuth",
+    ],
+    link: "https://github.com/yaswanthsaiyelisetty/gmail-agent",
+    live: "https://web-two-sage-90.vercel.app",
+  },
+  {
     name: "CloudScale-RL",
     subtitle: "AI-powered cloud auto-scaling environment",
-    meta: "Machine Learning / DevOps · April 2026",
+    meta: "Machine Learning / MLOps · April 2026",
     status: "Completed",
     award: "Meta × Hugging Face OpenEnv Hackathon 2026",
     summary:
       "A high-fidelity digital-twin reinforcement learning environment for cloud auto-scaling. It replaces reactive threshold rules with learned autonomous policies, solving both over-provisioning waste and under-provisioning outages.",
     stack: [
       "Reinforcement Learning",
+      "Python",
       "Docker",
       "FastAPI",
       "OpenEnv",
       "WebSockets",
-      "MLOps",
     ],
     metrics: [
       { value: "3", label: "Tasks" },
@@ -97,6 +170,7 @@ export const projects: Project[] = [
       "Predictive scaling that survives 10x traffic spikes",
       "Deployed to Hugging Face Spaces with Docker",
     ],
+    link: "https://github.com/yaswanthsaiyelisetty/cloudscale_rl",
   },
   {
     name: "UniPeasy",
@@ -106,13 +180,7 @@ export const projects: Project[] = [
     summary:
       "From a student pain-point in May 2025 to a live AI-powered success platform in Feb 2026. UniPeasy fixes fragmented resources, exam stress, skill gaps and trust issues with verified materials and authenticated opportunities.",
     role: "Founder & Technical Lead · Team of 9 · 6-month build",
-    stack: [
-      "Next.js 14",
-      "Firebase",
-      "Google Gemini",
-      "TypeScript",
-      "Tailwind CSS",
-    ],
+    stack: ["Next.js 14", "Firebase", "Google Gemini", "TypeScript", "Tailwind CSS"],
     metrics: [
       { value: "150+", label: "Active students" },
       { value: "9", label: "Team members" },
@@ -125,6 +193,8 @@ export const projects: Project[] = [
       "Centralized, topper-verified materials hub by branch, year and subject",
       "Memory Palace for spaced repetition and manually verified internships",
     ],
+    link: "https://github.com/yaswanthsaiyelisetty/unipeasy",
+    live: "https://unipeasy.com",
   },
   {
     name: "AutoTask",
@@ -134,15 +204,7 @@ export const projects: Project[] = [
     summary:
       "Built to solve my own problem of forgetting tasks. A natural-language WhatsApp assistant — \"remind me about the box at 9am\" — grown into a production-grade platform with strict parsing guardrails and a robust recurrence engine.",
     role: "Product Builder & Backend Architect",
-    stack: [
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Azure VM",
-      "Twilio",
-      "Gemini",
-      "Cosmos DB",
-    ],
+    stack: ["Node.js", "Express", "MongoDB", "Azure VM", "Twilio", "Gemini", "Cosmos DB"],
     metrics: [
       { value: "v2", label: "Production release" },
       { value: "24/7", label: "Monitored uptime" },
@@ -154,51 +216,127 @@ export const projects: Project[] = [
       "Timezone-aware reminders with an advanced recurrence engine",
       "Exceptions for weekends, holidays, pauses and custom dates",
       "Azure VM + PM2 + Nginx runtime with monitored health checks",
-      "In progress: ChromaDB vector store with text-embedding-004 retrieval",
     ],
+    link: "https://github.com/yaswanthsaiyelisetty/autotask",
+  },
+  {
+    name: "Swiggy Orchestrator AI",
+    subtitle: "WhatsApp-first conversational commerce agent",
+    meta: "Agentic AI / Conversational Commerce",
+    status: "In progress",
+    summary:
+      "An AI concierge that lets users order food, buy groceries and book restaurant tables entirely over WhatsApp. Gemini handles language understanding while Swiggy's Builders Club MCP acts as the commerce execution layer.",
+    stack: ["TypeScript", "Gemini", "MCP", "WhatsApp API"],
+    metrics: [
+      { value: "3", label: "Commerce verticals" },
+      { value: "MCP", label: "Execution layer" },
+      { value: "Multi", label: "Intent handling" },
+      { value: "Session", label: "Stateful chat" },
+    ],
+    highlights: [
+      "Reasoning pipeline covering intent parsing, planning and execution",
+      "Spans Food, Instamart and Dineout in one conversation",
+      "Session management with multi-intent order flows",
+      "Documented error recovery and security model",
+    ],
+    link: "https://github.com/yaswanthsaiyelisetty/swiggy-orchestrator-AI",
+  },
+  {
+    name: "CreatorIQ Agent",
+    subtitle: "Per-campaign Instagram DM automation",
+    meta: "Marketing Automation / Analytics",
+    status: "Completed",
+    summary:
+      "A Node.js platform that maps every Instagram reel or post to its own campaign, knowledge base and automation rules. An AI decision layer picks the campaign-correct DM for each comment, with a dashboard for leads and analytics.",
+    stack: ["Node.js", "SQLite", "Meta Graph API", "JavaScript"],
+    metrics: [
+      { value: "1:1", label: "Reel to campaign" },
+      { value: "Webhook", label: "Signature verified" },
+      { value: "Mock", label: "Safe demo mode" },
+      { value: "Leads", label: "Dashboard" },
+    ],
+    highlights: [
+      "Same keyword triggers different DMs depending on the source reel",
+      "Webhook signature validation plus a built-in event simulator",
+      "Lead capture and campaign analytics dashboard",
+      "Smoke tests and audit scripts included",
+    ],
+    link: "https://github.com/yaswanthsaiyelisetty/IQcreator-agent",
+  },
+  {
+    name: "AI Call Agent",
+    subtitle: "Telugu-speaking voice secretary on Twilio",
+    meta: "Voice AI / Telephony",
+    status: "Completed",
+    summary:
+      "A FastAPI phone secretary that answers Twilio calls and converses in Telugu/Manglish using Gemini 2.5 Flash, gathering the information you need before hanging up and pushing a structured summary to WhatsApp.",
+    stack: ["Python", "FastAPI", "Twilio Voice", "Gemini 2.5 Flash", "WhatsApp API"],
+    metrics: [
+      { value: "te-IN", label: "Speech locale" },
+      { value: "Live", label: "Call loop" },
+      { value: "Auto", label: "Call summary" },
+      { value: "WA", label: "Summary delivery" },
+    ],
+    highlights: [
+      "Telugu ASR with an accent-matched Polly voice",
+      "Conversation loop continues until required info is captured",
+      "Background Gemini summarization of the full transcript",
+      "Summary delivered straight to WhatsApp",
+    ],
+    link: "https://github.com/yaswanthsaiyelisetty/AI-call-agent",
   },
 ];
 
 export const skills = [
   {
+    group: "Data Engineering",
+    items: [
+      "Microsoft Fabric",
+      "ETL Pipelines",
+      "Medallion Architecture",
+      "Lakehouse",
+      "Apache Spark / PySpark",
+      "dbt",
+      "Data Cleaning & Validation",
+      "Pandas",
+    ],
+  },
+  {
+    group: "Business Intelligence",
+    items: [
+      "Power BI",
+      "Advanced Excel",
+      "Power Query",
+      "Pivot Tables",
+      "XLOOKUP / INDEX-MATCH",
+      "Dashboard Development",
+      "Report Automation",
+      "Data Visualization",
+    ],
+  },
+  {
     group: "Artificial Intelligence",
     items: [
       "Google Gemini",
-      "Reinforcement Learning",
-      "OpenEnv Framework",
       "RAG Architectures",
-      "Prompt Engineering",
       "LLM Integration",
       "Vector Embeddings",
-      "Genkit",
+      "NLP",
+      "Prompt Engineering",
+      "Reinforcement Learning",
+      "Agentic Workflows",
     ],
   },
   {
-    group: "Cloud Infrastructure",
-    items: [
-      "Microsoft Azure",
-      "Hugging Face Spaces",
-      "Docker",
-      "Docker Compose",
-      "Azure VMs",
-      "PM2",
-      "Nginx",
-      "Firebase",
-    ],
+    group: "Databases",
+    items: ["SQL", "PostgreSQL + pgvector", "SQLite", "MongoDB", "Azure Cosmos DB", "Firebase Firestore"],
   },
   {
-    group: "Application Development",
-    items: [
-      "Next.js",
-      "TypeScript",
-      "React",
-      "FastAPI",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Tailwind CSS",
-      "WebSockets",
-      "REST APIs",
-    ],
+    group: "Programming",
+    items: ["Python", "SQL", "TypeScript", "JavaScript", "C", "Node.js", "FastAPI", "Next.js"],
+  },
+  {
+    group: "Cloud & Tooling",
+    items: ["Microsoft Azure", "Docker", "Git & GitHub", "Vercel", "Hugging Face Spaces", "PM2", "Nginx", "VS Code"],
   },
 ];

@@ -7,7 +7,7 @@ export function Work() {
       id="work"
       eyebrow="Selected work"
       title="Things I've built."
-      intro="Production systems spanning reinforcement learning, AI products and cloud backends."
+      intro="Data pipelines, BI dashboards and AI products — shipped, deployed and open on GitHub."
     >
       <div className="space-y-6">
         {projects.map((p) => (
