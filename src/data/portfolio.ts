@@ -202,7 +202,7 @@ export const projects: Project[] = [
     meta: "AI Productivity / Cloud Backend · v2 production",
     status: "Live",
     summary:
-      "Built to solve my own problem of forgetting tasks. A natural-language WhatsApp assistant — \"remind me about the box at 9am\" — grown into a production-grade platform with strict parsing guardrails and a robust recurrence engine.",
+      "A production-grade task-management platform that converts natural-language WhatsApp messages into scheduled, recurring reminders. Built around a Gemini-powered parser with strict JSON guardrails, a timezone-aware recurrence engine and monitored Azure infrastructure.",
     role: "Product Builder & Backend Architect",
     stack: ["Node.js", "Express", "MongoDB", "Azure VM", "Twilio", "Gemini", "Cosmos DB"],
     metrics: [
