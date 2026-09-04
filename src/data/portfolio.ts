@@ -59,10 +59,8 @@ export const education = [
 
 export const certifications = [
   "Microsoft Certified: Fabric Data Engineer Associate (DP-700)",
-  "Microsoft Certified: Fabric Analytics Engineer Associate",
-  "Google Cloud Skill Badge — Generative AI",
-  "Google Cloud Skill Badge — Large Language Models",
-  "Google Cloud Skill Badge — Retrieval Augmented Generation",
+  "Microsoft Certified: Fabric Analytics Engineer Associate (DP-600)",
+  "Google Cloud Skill Badge – RAG",
   "Infosys Java Developer Certification",
 ];
 
