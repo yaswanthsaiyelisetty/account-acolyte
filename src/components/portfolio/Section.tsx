@@ -19,7 +19,7 @@ export function Section({
         <p className="text-[11px] font-medium uppercase tracking-[0.22em] text-muted-foreground">
           {eyebrow}
         </p>
-        <h2 className="mt-4 text-balance-tight text-metallic text-4xl font-semibold sm:text-6xl">
+        <h2 className="mt-4 text-balance-tight text-display text-4xl sm:text-6xl">
           {title}
         </h2>
         {intro ? (
