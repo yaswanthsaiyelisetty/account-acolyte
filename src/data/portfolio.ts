@@ -57,6 +57,27 @@ export const education = [
   },
 ];
 
+export type Experience = {
+  period: string;
+  role: string;
+  company: string;
+  type: string;
+  description: string;
+  certificateId?: string;
+};
+
+export const experience: Experience[] = [
+  {
+    period: "05 May 2026 — 01 July 2026",
+    role: "Generative AI Engineer Intern",
+    company: "Blackbucks Education Pvt. Ltd. · Hyderabad",
+    type: "8-Week Internship",
+    description:
+      "Completed an 8-week short-term internship in Generative AI Engineering, covering structured training sessions, practical assignments and project-based learning aligned with current industry standards. Focused on building real-world AI solutions under the guidelines of APSCHE.",
+    certificateId: "BBEDINT2026ST00068",
+  },
+];
+
 export type Certification = {
   name: string;
   issuer: string;
