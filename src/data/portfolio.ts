@@ -46,6 +46,7 @@ export type Certification = {
   issuer: string;
   code?: string;
   tier?: boolean;
+  verifyUrl?: string;
 };
 
 export const certifications: Certification[] = [
@@ -54,12 +55,16 @@ export const certifications: Certification[] = [
     issuer: "Microsoft Certified",
     code: "DP-700",
     tier: true,
+    verifyUrl:
+      "https://learn.microsoft.com/api/credentials/share/en-us/YELISETTYYASWANTHSAI-7152/DA8E4084E6F16D26?sharingId=B11558D6700A5C5E",
   },
   {
     name: "Fabric Analytics Engineer Associate",
     issuer: "Microsoft Certified",
     code: "DP-600",
     tier: true,
+    verifyUrl:
+      "https://learn.microsoft.com/api/credentials/share/en-us/YELISETTYYASWANTHSAI-7152/DA8E4084E6F16D26?sharingId=B11558D6700A5C5E",
   },
   { name: "Skill Badge – RAG", issuer: "Google Cloud", tier: true },
   { name: "Java Developer Certification", issuer: "Infosys" },
