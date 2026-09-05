@@ -10,14 +10,6 @@ const pipeline = [
 export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden px-6 pt-36 pb-24 sm:pt-44 sm:pb-32">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute left-1/2 top-[-8rem] h-[36rem] w-[64rem] max-w-[160vw] -translate-x-1/2 rounded-full blur-3xl"
-        style={{
-          background:
-            "radial-gradient(closest-side, rgba(244, 197, 168, 0.3), transparent)",
-        }}
-      />
       <div className="relative mx-auto grid max-w-6xl items-center gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20">
         <div>
           <h1 className="text-balance-tight text-display text-5xl sm:text-7xl">
