@@ -15,14 +15,14 @@ export function Hero() {
             <img
               src={profilePhoto.url}
               alt={`Portrait of ${profile.name}`}
-              className="relative h-64 w-64 rounded-full border-2 border-border object-cover object-[center_28%] shadow-2xl shadow-black/20 grayscale transition-all duration-500 hover:grayscale-0 sm:h-72 sm:w-72"
+              className="relative h-64 w-64 rounded-full border-2 border-border object-cover object-center shadow-2xl shadow-black/20 grayscale transition-all duration-500 hover:grayscale-0 sm:h-72 sm:w-72"
             />
           </div>
         </div>
 
         {/* Text column */}
         <div className="text-center lg:text-left">
-          <h1 className="text-balance-tight text-4xl font-semibold tracking-tight text-heading sm:text-5xl lg:text-6xl">
+          <h1 className="text-display text-balance-tight text-4xl sm:text-5xl lg:text-6xl">
             {profile.name}
           </h1>
 
