@@ -66,8 +66,11 @@ export const certifications: Certification[] = [
 ];
 
 
+export type ProjectCategory = "Agentic AI" | "Data Engineering & BI";
+
 export type Project = {
   name: string;
+  category: ProjectCategory;
   subtitle: string;
   meta: string;
   status: string;
@@ -81,38 +84,40 @@ export type Project = {
   live?: string;
 };
 
-export const projects: Project[] = [
-  {
-    name: "Global E-Commerce BI & Profit Optimization",
-    subtitle: "End-to-end analytics on three years of sales data",
-    meta: "Data Engineering / Business Intelligence",
+export const projects: Project[] = [  {
+    name: "CloudScale-RL",
+    category: "Agentic AI",
+    subtitle: "AI-powered cloud auto-scaling environment",
+    meta: "Machine Learning / MLOps · April 2026",
     status: "Completed",
+    award: "Meta × Hugging Face OpenEnv Hackathon 2026",
     summary:
-      "An end-to-end analytics project turning a global e-commerce transactions dataset (2023–2025) into a profit-optimization dashboard. Raw CSV flows through a Python cleaning and validation pipeline into SQLite, then into notebook EDA and an interactive web dashboard.",
+      "A high-fidelity digital-twin reinforcement learning environment for cloud auto-scaling. It replaces reactive threshold rules with learned autonomous policies, solving both over-provisioning waste and under-provisioning outages.",
     stack: [
+      "Reinforcement Learning",
       "Python",
-      "Pandas",
-      "NumPy",
-      "SQL / SQLite",
-      "Matplotlib & Seaborn",
-      "Chart.js",
+      "Docker",
+      "FastAPI",
+      "OpenEnv",
+      "WebSockets",
     ],
     metrics: [
-      { value: "3 yrs", label: "Data covered" },
-      { value: "4-stage", label: "ETL pipeline" },
-      { value: "SQLite", label: "Analytics store" },
-      { value: "Medallion", label: "Layered design" },
+      { value: "3", label: "Tasks" },
+      { value: "16", label: "Observation fields" },
+      { value: "~2k", label: "Lines of code" },
+      { value: "3/3", label: "Validation checks" },
     ],
     highlights: [
-      "Full pipeline: raw CSV → cleaned layers → SQLite → EDA → dashboard",
-      "Data quality enforced through validation and feature engineering in Pandas",
-      "Optimized SQL for revenue, margin and regional profitability analysis",
-      "Analyzes discounting and shipping cost as profit drivers",
+      "Digital-twin simulation modelling real server warm-up delays",
+      "Exponential latency physics using a quartic transfer function",
+      "Predictive scaling that survives 10x traffic spikes",
+      "Deployed to Hugging Face Spaces with Docker",
     ],
-    link: "https://github.com/yaswanthsaiyelisetty/Global-E-Commerce-Business-Intelligence-Profit-Optimization",
+    link: "https://github.com/yaswanthsaiyelisetty/cloudscale_rl",
   },
   {
     name: "Gmail Support Agent",
+    category: "Agentic AI",
     subtitle: "RAG-powered support desk on top of Gmail",
     meta: "AI Product / Data Platform",
     status: "Deployed",
@@ -143,37 +148,8 @@ export const projects: Project[] = [
     live: "https://web-two-sage-90.vercel.app",
   },
   {
-    name: "CloudScale-RL",
-    subtitle: "AI-powered cloud auto-scaling environment",
-    meta: "Machine Learning / MLOps · April 2026",
-    status: "Completed",
-    award: "Meta × Hugging Face OpenEnv Hackathon 2026",
-    summary:
-      "A high-fidelity digital-twin reinforcement learning environment for cloud auto-scaling. It replaces reactive threshold rules with learned autonomous policies, solving both over-provisioning waste and under-provisioning outages.",
-    stack: [
-      "Reinforcement Learning",
-      "Python",
-      "Docker",
-      "FastAPI",
-      "OpenEnv",
-      "WebSockets",
-    ],
-    metrics: [
-      { value: "3", label: "Tasks" },
-      { value: "16", label: "Observation fields" },
-      { value: "~2k", label: "Lines of code" },
-      { value: "3/3", label: "Validation checks" },
-    ],
-    highlights: [
-      "Digital-twin simulation modelling real server warm-up delays",
-      "Exponential latency physics using a quartic transfer function",
-      "Predictive scaling that survives 10x traffic spikes",
-      "Deployed to Hugging Face Spaces with Docker",
-    ],
-    link: "https://github.com/yaswanthsaiyelisetty/cloudscale_rl",
-  },
-  {
     name: "UniPeasy",
+    category: "Agentic AI",
     subtitle: "Unified student success platform",
     meta: "EdTech / AI Product · Feb 2026 launch",
     status: "Live",
@@ -198,6 +174,7 @@ export const projects: Project[] = [
   },
   {
     name: "AutoTask",
+    category: "Agentic AI",
     subtitle: "AI task management over WhatsApp",
     meta: "AI Productivity / Cloud Backend · v2 production",
     status: "Live",
@@ -221,6 +198,7 @@ export const projects: Project[] = [
   },
   {
     name: "Swiggy Orchestrator AI",
+    category: "Agentic AI",
     subtitle: "WhatsApp-first conversational commerce agent",
     meta: "Agentic AI / Conversational Commerce",
     status: "In progress",
@@ -241,8 +219,40 @@ export const projects: Project[] = [
     ],
     link: "https://github.com/yaswanthsaiyelisetty/swiggy-orchestrator-AI",
   },
+
+  {
+    name: "Global E-Commerce BI & Profit Optimization",
+    category: "Data Engineering & BI",
+    subtitle: "End-to-end analytics on three years of sales data",
+    meta: "Data Engineering / Business Intelligence",
+    status: "Completed",
+    summary:
+      "An end-to-end analytics project turning a global e-commerce transactions dataset (2023–2025) into a profit-optimization dashboard. Raw CSV flows through a Python cleaning and validation pipeline into SQLite, then into notebook EDA and an interactive web dashboard.",
+    stack: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "SQL / SQLite",
+      "Matplotlib & Seaborn",
+      "Chart.js",
+    ],
+    metrics: [
+      { value: "3 yrs", label: "Data covered" },
+      { value: "4-stage", label: "ETL pipeline" },
+      { value: "SQLite", label: "Analytics store" },
+      { value: "Medallion", label: "Layered design" },
+    ],
+    highlights: [
+      "Full pipeline: raw CSV → cleaned layers → SQLite → EDA → dashboard",
+      "Data quality enforced through validation and feature engineering in Pandas",
+      "Optimized SQL for revenue, margin and regional profitability analysis",
+      "Analyzes discounting and shipping cost as profit drivers",
+    ],
+    link: "https://github.com/yaswanthsaiyelisetty/Global-E-Commerce-Business-Intelligence-Profit-Optimization",
+  },
   {
     name: "CreatorIQ Agent",
+    category: "Data Engineering & BI",
     subtitle: "Per-campaign Instagram DM automation",
     meta: "Marketing Automation / Analytics",
     status: "Completed",
@@ -265,6 +275,7 @@ export const projects: Project[] = [
   },
   {
     name: "AI Call Agent",
+    category: "Agentic AI",
     subtitle: "Telugu-speaking voice secretary on Twilio",
     meta: "Voice AI / Telephony",
     status: "Completed",
@@ -284,6 +295,7 @@ export const projects: Project[] = [
       "Summary delivered straight to WhatsApp",
     ],
     link: "https://github.com/yaswanthsaiyelisetty/AI-call-agent",
+  },
   },
 ];
 
