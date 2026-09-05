@@ -20,15 +20,7 @@ export function Hero() {
       />
       <div className="relative mx-auto grid max-w-6xl items-center gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20">
         <div>
-          <p className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3.5 py-1.5 text-xs text-muted-foreground">
-            <span className="relative flex h-1.5 w-1.5">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-60" />
-              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-600" />
-            </span>
-            Available for AI &amp; Data Engineering roles
-          </p>
-
-          <h1 className="mt-7 text-balance-tight text-display text-5xl sm:text-7xl">
+          <h1 className="text-balance-tight text-display text-5xl sm:text-7xl">
             {profile.name}
           </h1>
           <p className="mt-5 max-w-xl font-serif text-xl leading-snug text-muted-foreground sm:text-2xl">
