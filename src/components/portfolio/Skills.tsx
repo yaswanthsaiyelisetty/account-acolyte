@@ -51,9 +51,9 @@ export function Skills() {
               <div className="min-w-0">
                 <p className="text-display text-lg">{c.name}</p>
                 <p className="mt-1 text-xs text-muted-foreground">{c.issuer}</p>
-                {c.tier ? (
+                {c.verifyUrl ? (
                   <a
-                    href="https://learn.microsoft.com/en-us/credentials/"
+                    href={c.verifyUrl}
                     target="_blank"
                     rel="noreferrer"
                     className="mt-3 inline-block text-xs font-medium text-heading underline-offset-4 hover:underline"
