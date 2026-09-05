@@ -48,6 +48,7 @@ function Index() {
           <Work />
           <Skills />
           <Education />
+          <Experience />
           <Contact />
         </main>
       </div>
