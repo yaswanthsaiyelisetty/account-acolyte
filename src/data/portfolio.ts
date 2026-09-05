@@ -35,7 +35,7 @@ export const education = [
     period: "2023 — 2027",
     title: "B.Tech, Computer Science & Engineering",
     org: "Dhanekula Institute of Engineering and Technology",
-    score: "7.96 CGPA",
+    score: "7.87 CGPA",
     detail:
       "Expected graduation 2027. Focus on data engineering, AI/ML and cloud — building real products with Microsoft Fabric, Google Gemini and Azure infrastructure.",
   },
