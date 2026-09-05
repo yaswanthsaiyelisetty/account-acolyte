@@ -7,6 +7,7 @@ import { About } from "@/components/portfolio/About";
 import { Work } from "@/components/portfolio/Work";
 import { Skills } from "@/components/portfolio/Skills";
 import { Education } from "@/components/portfolio/Education";
+import { Experience } from "@/components/portfolio/Experience";
 import { Contact } from "@/components/portfolio/Contact";
 import { NeonWaveBackground } from "@/components/portfolio/NeonWaveBackground";
 
@@ -47,6 +48,7 @@ function Index() {
           <Work />
           <Skills />
           <Education />
+          <Experience />
           <Contact />
         </main>
       </div>
