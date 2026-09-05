@@ -39,6 +39,22 @@ export const education = [
     detail:
       "Expected graduation 2027. Focus on data engineering, AI/ML and cloud — building real products with Microsoft Fabric, Google Gemini and Azure infrastructure.",
   },
+  {
+    period: "2021 — 2023",
+    title: "Intermediate (MPC)",
+    org: "Sri Dhana Lakshmi Jr College, Muppala · Board of Intermediate Education",
+    score: "89.2%",
+    detail:
+      "890 / 1000 marks, first class. Mathematics, Physics and Chemistry in English medium — the foundation for the quantitative side of my engineering work.",
+  },
+  {
+    period: "2020 — 2021",
+    title: "Secondary School (Class X)",
+    org: "Alfried Nobel High School, Narasaraopet · Board of Secondary Education",
+    score: "96.8%",
+    detail:
+      "581 / 600 marks, first class. English medium, with early interest in computing and problem solving.",
+  },
 ];
 
 export type Certification = {
