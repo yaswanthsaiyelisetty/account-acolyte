@@ -37,7 +37,6 @@ export function Work() {
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         {visible.map((p) => {
           const wide = featured.includes(p.name);
-          const mint = p.name === "CloudScale-RL";
           return (
             <article
               key={p.name}
@@ -45,17 +44,6 @@ export function Work() {
                 wide ? "md:col-span-2" : ""
               }`}
             >
-              {mint ? (
-                <div
-                  aria-hidden
-                  className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full blur-3xl"
-                  style={{
-                    background:
-                      "radial-gradient(closest-side, rgba(167, 229, 211, 0.55), transparent)",
-                  }}
-                />
-              ) : null}
-
               {p.award ? (
                 <p className="relative mb-4 inline-block w-fit rounded-full border border-input bg-secondary px-3 py-1 text-[11px] font-medium text-heading">
                   {p.award}
