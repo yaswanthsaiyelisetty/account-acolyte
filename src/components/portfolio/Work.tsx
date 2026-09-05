@@ -1,16 +1,40 @@
+import { useState } from "react";
 import { Section } from "./Section";
 import { projects } from "@/data/portfolio";
 
+const filters = ["All", "Agentic AI", "Data Engineering & BI"] as const;
+
 export function Work() {
+  const [active, setActive] = useState<(typeof filters)[number]>("All");
+  const visible =
+    active === "All" ? projects : projects.filter((p) => p.category === active);
+
   return (
     <Section
       id="work"
       eyebrow="Selected work"
       title="Things I've built."
-      intro="Data pipelines, BI dashboards and AI products — shipped, deployed and open on GitHub."
+      intro="Agentic AI systems, data pipelines and BI dashboards — shipped, deployed and open on GitHub."
     >
+      <div className="mb-8 flex flex-wrap gap-2">
+        {filters.map((f) => (
+          <button
+            key={f}
+            type="button"
+            onClick={() => setActive(f)}
+            className={`rounded-full border px-4 py-1.5 text-xs font-medium transition-colors ${
+              active === f
+                ? "border-primary bg-primary/12 text-primary"
+                : "border-border text-muted-foreground hover:bg-secondary"
+            }`}
+          >
+            {f}
+          </button>
+        ))}
+      </div>
+
       <div className="space-y-6">
-        {projects.map((p) => (
+        {visible.map((p) => (
           <article
             key={p.name}
             className="overflow-hidden rounded-3xl border border-border bg-surface"
