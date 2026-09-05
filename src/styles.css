@@ -53,11 +53,11 @@
 :root {
   --radius: 0.875rem;
 
-  --background: oklch(0 0 0);
-  --foreground: oklch(0.968 0.0016 286);
-  --surface: oklch(0.22 0.002 286);
-  --surface-2: oklch(0.27 0.003 286);
-  --card: oklch(0.22 0.002 286);
+  --background: oklch(0.055 0.004 280);
+  --foreground: oklch(0.975 0.0016 286);
+  --surface: oklch(0.13 0.004 280);
+  --surface-2: oklch(0.18 0.004 280);
+  --card: oklch(0.13 0.004 280);
   --card-foreground: oklch(0.968 0.0016 286);
   --popover: oklch(0.22 0.002 286);
   --popover-foreground: oklch(0.968 0.0016 286);
@@ -71,7 +71,7 @@
   --accent-foreground: oklch(0.968 0.0016 286);
   --destructive: oklch(0.62 0.21 25);
   --destructive-foreground: oklch(1 0 0);
-  --border: oklch(1 0 0 / 12%);
+  --border: oklch(1 0 0 / 8%);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.693 0.161 250);
   --sidebar: oklch(0.22 0.002 286);
@@ -85,7 +85,7 @@
 }
 
 .dark {
-  --background: oklch(0 0 0);
+  --background: oklch(0.055 0.004 280);
   --foreground: oklch(0.968 0.0016 286);
 }
 
@@ -113,4 +113,30 @@
 @utility text-balance-tight {
   text-wrap: balance;
   letter-spacing: -0.02em;
+}
+
+@utility text-metallic {
+  background-image: linear-gradient(
+    to bottom,
+    oklch(1 0 0) 0%,
+    oklch(0.93 0.002 286) 45%,
+    oklch(0.66 0.004 286) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@utility glass {
+  border-radius: 1.5rem;
+  background-color: oklch(1 0 0 / 3%);
+  border: 1px solid oklch(1 0 0 / 8%);
+  backdrop-filter: blur(24px) saturate(140%);
+  transition: border-color 500ms ease-out, background-color 500ms ease-out,
+    transform 500ms ease-out;
+
+  &:hover {
+    border-color: oklch(1 0 0 / 18%);
+    background-color: oklch(1 0 0 / 5%);
+  }
 }

@@ -14,20 +14,20 @@ export function Section({
   children: ReactNode;
 }) {
   return (
-    <section id={id} className="scroll-mt-16 border-t border-border/60 px-5 py-20 sm:py-28">
-      <div className="mx-auto max-w-5xl">
-        <p className="text-xs font-medium uppercase tracking-[0.18em] text-primary">
+    <section id={id} className="scroll-mt-24 px-6 py-24 sm:py-32">
+      <div className="mx-auto max-w-6xl">
+        <p className="text-[11px] font-medium uppercase tracking-[0.22em] text-muted-foreground">
           {eyebrow}
         </p>
-        <h2 className="mt-3 text-balance-tight text-3xl font-semibold sm:text-5xl">
+        <h2 className="mt-4 text-balance-tight text-metallic text-4xl font-semibold sm:text-6xl">
           {title}
         </h2>
         {intro ? (
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
+          <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
             {intro}
           </p>
         ) : null}
-        <div className="mt-12">{children}</div>
+        <div className="mt-14">{children}</div>
       </div>
     </section>
   );

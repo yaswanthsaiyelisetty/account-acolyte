@@ -2,23 +2,20 @@ import { profile } from "@/data/portfolio";
 
 export function Contact() {
   return (
-    <section
-      id="contact"
-      className="scroll-mt-16 border-t border-border/60 px-5 py-24 text-center sm:py-32"
-    >
-      <div className="mx-auto max-w-2xl">
-        <p className="text-xs font-medium uppercase tracking-[0.18em] text-primary">
+    <section id="contact" className="scroll-mt-24 px-6 py-28 text-center sm:py-36">
+      <div className="glass mx-auto max-w-3xl rounded-3xl px-8 py-16 sm:px-14">
+        <p className="text-[11px] font-medium uppercase tracking-[0.22em] text-muted-foreground">
           Get in touch
         </p>
-        <h2 className="mt-3 text-balance-tight text-3xl font-semibold sm:text-5xl">
+        <h2 className="mt-4 text-balance-tight text-metallic text-4xl font-semibold sm:text-6xl">
           Let's build dependable systems.
         </h2>
-        <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-          Open to AI, cloud and full-stack opportunities.
+        <p className="mt-5 text-base leading-relaxed text-muted-foreground">
+          Open to AI, data engineering and cloud opportunities.
         </p>
         <a
           href={`mailto:${profile.email}`}
-          className="mt-8 inline-block text-lg font-medium text-primary underline-offset-4 hover:underline"
+          className="mt-8 inline-block text-lg font-medium text-foreground underline-offset-4 hover:underline"
         >
           {profile.email}
         </a>
@@ -27,21 +24,21 @@ export function Contact() {
             href={profile.linkedin}
             target="_blank"
             rel="noreferrer"
-            className="rounded-full border border-border px-5 py-2 text-sm transition-colors hover:bg-secondary"
+            className="rounded-full border border-white/[0.1] px-5 py-2 text-sm transition-colors duration-300 hover:border-white/25"
           >
-            LinkedIn
+            LinkedIn ↗
           </a>
           <a
             href={profile.github}
             target="_blank"
             rel="noreferrer"
-            className="rounded-full border border-border px-5 py-2 text-sm transition-colors hover:bg-secondary"
+            className="rounded-full border border-white/[0.1] px-5 py-2 text-sm transition-colors duration-300 hover:border-white/25"
           >
-            GitHub
+            GitHub ↗
           </a>
         </div>
       </div>
-      <footer className="mx-auto mt-24 max-w-5xl border-t border-border/60 pt-8 text-xs text-muted-foreground">
+      <footer className="mx-auto mt-20 max-w-6xl text-xs text-muted-foreground">
         © {new Date().getFullYear()} {profile.name}
       </footer>
     </section>
