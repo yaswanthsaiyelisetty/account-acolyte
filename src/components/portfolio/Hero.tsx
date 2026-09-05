@@ -1,4 +1,3 @@
-import profilePhoto from "@/assets/profile.png.asset.json";
 import { profile } from "@/data/portfolio";
 
 export function Hero() {
@@ -17,13 +16,7 @@ export function Hero() {
       />
 
       <div className="relative mx-auto max-w-3xl text-center">
-        <img
-          src={profilePhoto.url}
-          alt={`Portrait of ${profile.name}`}
-          className="mx-auto h-24 w-24 rounded-full object-cover object-top ring-1 ring-border"
-        />
-
-        <p className="mt-8 text-sm font-medium text-primary">{profile.role}</p>
+        <p className="text-sm font-medium text-primary">{profile.role}</p>
 
         <h1 className="text-display text-balance-tight mt-3 text-5xl sm:text-7xl">
           {profile.name}
