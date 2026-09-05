@@ -170,7 +170,7 @@ export const projects: Project[] = [  {
       "Memory Palace for spaced repetition and manually verified internships",
     ],
     link: "https://github.com/yaswanthsaiyelisetty/unipeasy",
-    live: "https://unipeasy.com",
+    live: "https://unipeasy.yaswanthsai.tech/",
   },
   {
     name: "AutoTask",
