@@ -296,7 +296,7 @@ export const projects: Project[] = [  {
     ],
     link: "https://github.com/yaswanthsaiyelisetty/AI-call-agent",
   },
-  },
+
 ];
 
 export const skills = [
