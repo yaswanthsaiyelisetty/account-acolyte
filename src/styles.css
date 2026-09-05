@@ -53,6 +53,8 @@
   --color-sidebar-ring: var(--sidebar-ring);
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-serif: "EB Garamond", Georgia, serif;
+  --font-editorial: "Instrument Serif", Georgia, serif;
+  --font-work: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 :root {
@@ -100,6 +102,7 @@
   --scene-base-1: oklch(0.065 0.012 292);
   --scene-base-2: oklch(0.095 0.026 287);
   --scene-grid: oklch(0.92 0.02 292 / 2%);
+  --skill-glow: oklch(0.72 0.2 300 / 38%);
 }
 
 /* Light editorial theme (previous off-white design) */
@@ -146,6 +149,7 @@
   --scene-base-1: oklch(0.955 0.008 295);
   --scene-base-2: oklch(0.93 0.02 290);
   --scene-grid: oklch(0.3 0.03 292 / 4%);
+  --skill-glow: oklch(0.56 0.2 300 / 24%);
 }
 
 @layer base {
