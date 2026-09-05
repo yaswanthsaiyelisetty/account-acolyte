@@ -38,7 +38,7 @@ function Index() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-transparent">
+    <div className="relative min-h-screen overflow-x-clip bg-transparent">
       <NeonWaveBackground />
       <div className="relative z-10">
         <Nav />
