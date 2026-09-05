@@ -7,6 +7,7 @@ import { Work } from "@/components/portfolio/Work";
 import { Skills } from "@/components/portfolio/Skills";
 import { Education } from "@/components/portfolio/Education";
 import { Contact } from "@/components/portfolio/Contact";
+import { NeonWaveBackground } from "@/components/portfolio/NeonWaveBackground";
 
 const title = "Yaswanth Sai — AI & Data Engineer";
 const description =
@@ -28,16 +29,19 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="min-h-screen bg-background">
-      <Nav />
-      <main>
-        <Hero />
-        <About />
-        <Work />
-        <Skills />
-        <Education />
-        <Contact />
-      </main>
+    <div className="relative min-h-screen bg-transparent">
+      <NeonWaveBackground />
+      <div className="relative z-10">
+        <Nav />
+        <main>
+          <Hero />
+          <About />
+          <Work />
+          <Skills />
+          <Education />
+          <Contact />
+        </main>
+      </div>
     </div>
   );
 }
