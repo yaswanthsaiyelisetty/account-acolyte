@@ -24,9 +24,9 @@ export const profile = {
 };
 
 export const stats = [
-  { value: "30+", label: "Certifications" },
-  { value: "2", label: "Microsoft Fabric certs" },
-  { value: "10+", label: "Projects shipped" },
+  { value: "2x", label: "Microsoft Fabric Certified" },
+  { value: "10+", label: "Production deployments" },
+  { value: "RL / RAG", label: "Specialization" },
   { value: "150+", label: "Users reached" },
 ];
 
@@ -39,30 +39,32 @@ export const education = [
     detail:
       "Expected graduation 2027. Focus on data engineering, AI/ML and cloud — building real products with Microsoft Fabric, Google Gemini and Azure infrastructure.",
   },
-  {
-    period: "2023",
-    title: "Intermediate (MPC)",
-    org: "Sri Dhanalakshmi Junior College",
-    score: "89%",
-    detail:
-      "Strong foundation in mathematics, physics and chemistry. Early interest in programming and problem solving.",
-  },
-  {
-    period: "2021",
-    title: "Secondary Education (SSC)",
-    org: "Alfried Nobel High School",
-    score: "92%",
-    detail:
-      "Established fundamentals in analytical thinking alongside consistent academic excellence.",
-  },
 ];
 
-export const certifications = [
-  "Microsoft Certified: Fabric Data Engineer Associate (DP-700)",
-  "Microsoft Certified: Fabric Analytics Engineer Associate (DP-600)",
-  "Google Cloud Skill Badge – RAG",
-  "Infosys Java Developer Certification",
+export type Certification = {
+  name: string;
+  issuer: string;
+  code?: string;
+  tier?: boolean;
+};
+
+export const certifications: Certification[] = [
+  {
+    name: "Fabric Data Engineer Associate",
+    issuer: "Microsoft Certified",
+    code: "DP-700",
+    tier: true,
+  },
+  {
+    name: "Fabric Analytics Engineer Associate",
+    issuer: "Microsoft Certified",
+    code: "DP-600",
+    tier: true,
+  },
+  { name: "Skill Badge – RAG", issuer: "Google Cloud", tier: true },
+  { name: "Java Developer Certification", issuer: "Infosys" },
 ];
+
 
 export type Project = {
   name: string;
